@@ -1,0 +1,28 @@
+.slide{
+    text-align: center !important;
+}
+.slide ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.slide ul li button{
+    margin: 10px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+.slide ul li button:hover{
+    color: #000;
+    background-color: #fff;
+}
+.slide h3 {
+    color: #44d7b6;
+    font-family: Satisfy, cursive;
+    font-size: 1.5rem;
+}
+
+.slide button.active {
+    background-color: #44d7b6;
+    color: #fff;
+}
