@@ -1,5 +1,8 @@
-.slide{
-    text-align: center !important;
+.slide {
+    margin-top: 70px;
+}
+.slide .headline-tour{
+    text-align: center;
 }
 .slide ul{
     display: flex;
@@ -20,6 +23,7 @@
     color: #44d7b6;
     font-family: Satisfy, cursive;
     font-size: 1.5rem;
+    font-style: italic;
 }
 
 .slide button.active {

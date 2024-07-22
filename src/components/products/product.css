@@ -1,3 +1,51 @@
 h6.mb-2.text-muted.card-subtitle span{
     color: #44d7b6 !important;
 }
+
+i.fa-solid.fa-location-crosshairs {
+    margin-right: 10px;
+}
+
+h6.mb-2.text-muted.card-subtitle{
+    margin: 1rem 0 !important;
+}
+
+p{
+    margin: 1rem 0 !important;
+    opacity: 0.5;
+}
+
+.product-col {
+    display: flex;
+    align-items: stretch;
+}
+
+.product-card{
+    border: none !important;
+    border-radius: 5px !important;
+}
+.product-card .card-body {
+    flex: 1;
+}
+
+.star-icons i{
+    color: yellow;
+}
+
+
+.product-card.bounce {
+    animation: bounce 1s alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
