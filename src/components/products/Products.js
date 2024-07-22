@@ -161,7 +161,7 @@ function Products() {
             </ul>
 
             <div className="tab-content">
-                <Row>
+                <Row >
                     {
                         filteredTours.map((item) => (
                             <Product pro={item}/>
