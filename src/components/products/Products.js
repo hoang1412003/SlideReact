@@ -138,40 +138,45 @@ function Products() {
 
     return (
         <Container className="slide">
-            <Col lg={12} md={12} sm={12} xs={12}>
-                <div className="headline-tour">
-                    <h3>Perfect destination</h3>
-                    <h2>Trending destinations</h2>
-                </div>
-            </Col>
-            
-            <Col lg={12} md={12} sm={12} xs={12}>
-                <ul>
-                    {
-                        listCateTour.map((item) => (
-                            <li key={item.id}>
-                                <Button ref={btnRef}
-                                    onClick={() => {
-                                        setSelectedCategory(item.title)
-                                    }}
-                                    className={selectedCategory === item.title ? "active" : ""}
-                                >
-                                    {item.title}
-                                </Button>
-                            </li>
-                        ))
-                    }
-                </ul>
-            </Col>
-            
+            <Row>
+                <Col lg={12} md={12} sm={12} xs={12}>
+                    <div className="headline-tour">
+                        <h3>Perfect destination</h3>
+                        <h2>Trending destinations</h2>
+                    </div>
+                </Col>
+            </Row>
+
+            <Row>
+                <Col lg={12} md={12} sm={12} xs={12}>
+                    <ul>
+                        {
+                            listCateTour.map((item) => (
+                                <li key={item.id}>
+                                    <Button ref={btnRef}
+                                        onClick={() => {
+                                            setSelectedCategory(item.title)
+                                        }}
+                                        className={selectedCategory === item.title ? "active" : ""}
+                                    >
+                                        {item.title}
+                                    </Button>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </Col>
+            </Row>
+
+
 
             <div className="tab-content">
                 <Row >
                     {
                         filteredTours.map((item) => (
-                            <Product 
-                            selectedCategory={selectedCategory}
-                            pro={item}/>
+                            <Product
+                                selectedCategory={selectedCategory}
+                                pro={item} />
                         ))
                     }
                 </Row>
